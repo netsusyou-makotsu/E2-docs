@@ -1,0 +1,65 @@
+site_name: E2-docs
+site_description: 一个记录E2药物售卖的文档
+site_author: 恒箫·魔骨
+nav:
+    - 主页: index.md
+    - 关于:
+      - '关于': about.md
+      - '更新': update.md
+    - 药店: pharmacy.md 
+    - 地区:
+      - 直辖:
+        - 上海:
+          - 杨浦区: 直辖/上海/yangpu.md
+      - 广东:
+        - 广州:
+          - 天河区: 广东/广州/tianhe.md
+          - 荔湾区: 广东/广州/liwan.md
+        - 中山: 广东/中山.md
+      - 河北:
+        - 秦皇岛:
+          - 海港区: 河北/秦皇岛/haigang.md
+markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - toc:
+        permalink: "*"
+        baselevel: 2
+theme:
+  name: material
+  locale: zh
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: 魔骨模式
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 恒箫模式
+  features:
+    - navigation.instant
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.path
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+plugins:
+    - search:
+        indexing: 'full'
+        separator: '[\s\u200b\-]'
+extra:
+  generator: ture
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/kokowamakotsu
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/127147961
+    - icon: fontawesome/solid/paper-plane
+      link: https://t.me/kokowamakotsu
