@@ -1,6 +1,8 @@
 site_name: E2-docs
 site_description: 一个记录E2药物售卖的文档
 site_author: 恒箫·魔骨
+repo_url: https://github.com/netsusyou-makotsu/E2-docs/
+repo_name: Github
 nav:
     - 主页: index.md
     - 关于:
@@ -16,17 +18,18 @@ nav:
           - 天河区: 广东/广州/tianhe.md
           - 荔湾区: 广东/广州/liwan.md
         - 中山: 广东/中山.md
+      - 福建:
+        - 泉州:
+          - 丰泽区: 福建/泉州/fengze.md
       - 河北:
         - 秦皇岛:
           - 海港区: 河北/秦皇岛/haigang.md
 markdown_extensions:
-    - pymdownx.highlight:
-        anchor_linenums: true
     - toc:
         permalink: "*"
         baselevel: 2
 theme:
-  name: material
+  name: readthedocs
   locale: zh
   palette:
     - scheme: default
