@@ -8,7 +8,18 @@ nav:
     - 关于:
       - '关于': about.md
       - '更新': update.md
-    - 药店: pharmacy.md 
+    - 药店: pharmacy.md
+    - 魔骨售价:
+      - 'language' : shop.md
+      - 'English': shop/shop_en.md
+      - 'lingvo': shop/shop_eo.md
+      - '中文': shop/shop.md
+      - '日本語': shop/shop_jp.md
+      - 'français' : shop/shop_fr.md
+      - 'Deutsch': shop/shop_de.md
+      - 'język' : shop/shop_pl.md
+      - 'italiano' : shop/shop_it.md
+      - 'ไทย' : shop/shop_th.md
     - 地区:
       - 直辖:
         - 上海:
@@ -17,6 +28,7 @@ nav:
         - 广州:
           - 天河区: 广东/广州/tianhe.md
           - 荔湾区: 广东/广州/liwan.md
+          - 海珠区: 广东/广州/haizhu.md
         - 中山: 广东/中山.md
       - 福建:
         - 泉州:
@@ -25,11 +37,29 @@ nav:
         - 秦皇岛:
           - 海港区: 河北/秦皇岛/haigang.md
 markdown_extensions:
-    - toc:
-        permalink: "*"
-        baselevel: 2
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - md_in_html
+  - footnotes
+  - abbr
+  - attr_list
+  - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: "*"
+      baselevel: 2
 theme:
-  name: readthedocs
+  name: material
   locale: zh
   palette:
     - scheme: default
@@ -40,6 +70,20 @@ theme:
       toggle:
         icon: material/brightness-4
         name: 恒箫模式
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
   features:
     - navigation.instant
     - navigation.indexes
